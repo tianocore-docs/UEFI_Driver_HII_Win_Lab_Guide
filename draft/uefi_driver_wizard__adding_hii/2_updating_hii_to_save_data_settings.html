@@ -1,0 +1,788 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>Lab 2. Updating HII to Save Data Settings · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+        <link rel="stylesheet" href="../styles/website.css">
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="3_updating_your_driver_to_initialize_data_from_the.html" />
+    
+    
+    <link rel="prev" href="b_edit_driver_for_adding_hii.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    UEFI_Driver_HII_Win_Lab_Guide
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    UEFI Driver Wizard – Adding HII Labs
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" data-path="1_adding_strings_and_forms_to_setup_hii_for_user_c.html">
+            
+                <a href="1_adding_strings_and_forms_to_setup_hii_for_user_c.html">
+            
+                    
+                    Lab 1. Adding Strings and Forms to Setup HII for User Configuration
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2" data-path="a_setup_for_lab_adding_hii.html">
+            
+                <a href="a_setup_for_lab_adding_hii.html">
+            
+                    
+                    a. Setup for Lab adding HII 
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3" data-path="b_edit_driver_for_adding_hii.html">
+            
+                <a href="b_edit_driver_for_adding_hii.html">
+            
+                    
+                    b. Edit Driver for adding HII  
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.2.4" data-path="2_updating_hii_to_save_data_settings.html">
+            
+                <a href="2_updating_hii_to_save_data_settings.html">
+            
+                    
+                    Lab 2. Updating HII to Save Data Settings
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.5" data-path="3_updating_your_driver_to_initialize_data_from_the.html">
+            
+                <a href="3_updating_your_driver_to_initialize_data_from_the.html">
+            
+                    
+                    Lab 3. Updating your driver to initialize data from the VFR data to the HII Database
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.6" data-path="4_updating_the_menu_reset_button.html">
+            
+                <a href="4_updating_the_menu_reset_button.html">
+            
+                    
+                    Lab 4. Updating the Menu:  Reset Button
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.7" data-path="5_updating_the_menu_pop_-up_box.html">
+            
+                <a href="5_updating_the_menu_pop_-up_box.html">
+            
+                    
+                    Lab 5. Updating the Menu:  Pop-up Box
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.8" data-path="6_updating_the_menu_creating_a_string_to_name_a_sa.html">
+            
+                <a href="6_updating_the_menu_creating_a_string_to_name_a_sa.html">
+            
+                    
+                    Lab 6. Updating the Menu:  Creating a String to Name a Saved Configuration
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.9" data-path="7_updating_the_menu_numeric_entry.html">
+            
+                <a href="7_updating_the_menu_numeric_entry.html">
+            
+                    
+                    Lab 7. Updating the Menu:  Numeric Entry
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.10" data-path="8_updating_your_driver_for_interactive_call_backs.html">
+            
+                <a href="8_updating_your_driver_for_interactive_call_backs.html">
+            
+                    
+                    Lab 8. Updating your Driver for Interactive Call Backs
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.11" data-path="9_add_code_to_your_driver_when_call_back_events_oc.html">
+            
+                <a href="9_add_code_to_your_driver_when_call_back_events_oc.html">
+            
+                    
+                    Lab 9. Add code to your driver when Call Back events occur for Interactive Items
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.12" data-path="10_adding_an_additional_form_page.html">
+            
+                <a href="10_adding_an_additional_form_page.html">
+            
+                    
+                    Lab 10. Adding an Additional Form Page
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.13" data-path="11_adding_communication_from_driver_to_console_thr.html">
+            
+                <a href="11_adding_communication_from_driver_to_console_thr.html">
+            
+                    
+                    Lab 11. Adding Communication from Driver to Console through HII
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="../lab_setup/">
+            
+                <a href="../lab_setup/">
+            
+                    
+                    Lab Setup
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="../microsoft_windows_10__visual_studio_command_prompt.html">
+            
+                <a href="../microsoft_windows_10__visual_studio_command_prompt.html">
+            
+                    
+                    Microsoft Windows 10 – Visual Studio command prompt
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="../reference.html">
+            
+                <a href="../reference.html">
+            
+                    
+                    Reference
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="../microsoft_windows_and_visual_studio_matrix/">
+            
+                <a href="../microsoft_windows_and_visual_studio_matrix/">
+            
+                    
+                    Microsoft Windows and Visual Studio Matrix 
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" data-path="../microsoft_windows_and_visual_studio_matrix/glossary_of_uefi_terms_and_acronyms.html">
+            
+                <a href="../microsoft_windows_and_visual_studio_matrix/glossary_of_uefi_terms_and_acronyms.html">
+            
+                    
+                    Glossary of UEFI Terms and Acronyms
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" data-path="../microsoft_windows_and_visual_studio_matrix/helpful_links.html">
+            
+                <a href="../microsoft_windows_and_visual_studio_matrix/helpful_links.html">
+            
+                    
+                    Helpful Links
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+	
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >Lab 2. Updating HII to Save Data Settings</a>
+    </h1>
+</div>
+<div>
+    <!-- 
+    <img style="float:left; align:middle; height:2em" src="media/TianocoreTitlePageLogo.jpg"/>
+     -->
+    
+      <h2>
+        <div style="position:absolute;text-align:left">UEFI Driver HII Win Lab Guide</div>
+        <div style="position:absolute;width:100%;text-align:center">DRAFT </div>
+        <div style="text-align:right">Revision 01.0</div>
+      </h2>  
+    
+    <hr>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+                                <section class="normal markdown-section">
+                                
+                                <!--- @file
+ file Updating HII to Save Data Settings.md
+
+Copyright (c) 2018, Intel Corporation. All rights reserved.<BR>
+
+Redistribution and use in source (original document form) and 'compiled'
+forms (converted to PDF, epub, HTML and other formats) with or without
+modification, are permitted provided that the following conditions are met:
+
+1) Redistributions of source code (original document form) must retain the
+above copyright notice, this list of conditions and the following
+disclaimer as the first lines of this file unmodified.
+
+2) Redistributions in compiled form (transformed to other DTDs, converted to
+PDF, epub, HTML and other formats) must reproduce the above copyright
+notice, this list of conditions and the following disclaimer in the
+documentation and/or other materials provided with the distribution.
+
+THIS DOCUMENTATION IS PROVIDED BY TIANOCORE PROJECT "AS IS" AND ANY EXPRESS OR
+IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF
+MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO
+EVENT SHALL TIANOCORE PROJECT BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL,
+SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO,
+PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS;
+OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY,
+WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR
+OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS DOCUMENTATION, EVEN IF
+ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+
+-->
+<h2 id="2-updating-hii-to-save-data-settings">Lab 2. Updating HII to Save Data Settings </h2>
+<p>In this lab, you&#x2019;ll learn how to modify and update your driver&#x2019;s HII code to save the users settings into NVRAM. The UEFI Driver Wizard created the protocols for your driver to update and interface with the HII browser engine and database. The HII configuration access Protocol functions for MyWizardDriver are in the file C:\fw\edk2\MyWizardDriver\HiiConfigAccess.c. This next lab will install these protocols and update them to save the user data from the HII menus into NVRAM.</p>
+<ol>
+<li><strong>Update</strong> the<code>MyWizardDriver.c</code>file <br> Your driver will need to keep track of the consumed protocols in it&#x2019;s own data structure so it will need to declare local pointers to these and then store them in its own private context data structure.</li>
+<li><strong>Add</strong> the following local variable declarations in the function <code>MyWizardDriverDriverEntryPoint</code> Entry Point (as shown below Approx. line 185 ): <pre><code>EFI_HII_STRING_PROTOCOL         *HiiString;
+EFI_FORM_BROWSER2_PROTOCOL      *FormBrowser2;
+EFI_HII_CONFIG_ROUTING_PROTOCOL *HiiConfigRouting;
+</code></pre><img src="../media/image27.png" alt=""></li>
+<li><strong>Add</strong> the following code to locate and store consumed protocols <strong>before</strong> the <code>// Publish sample Fromset and config access</code>  comment (as shown below Approx. line 227): <br> The reason is to Locate the Hii Database, Hii String, Hii Form browser and config routing protocols and store their pointers into the Private context data structure for your driver to access.</li>
+</ol>
+<pre><code>//Begin code
+ //
+  // Locate Hii Database protocol
+  //
+  Status = gBS-&gt;LocateProtocol (&amp;gEfiHiiDatabaseProtocolGuid, NULL, (VOID **) &amp;HiiDatabase);
+  if (EFI_ERROR (Status)) {
+    return Status;
+  }
+  PrivateData-&gt;HiiDatabase = HiiDatabase;
+
+  //
+  // Locate HiiString protocol
+  //
+  Status = gBS-&gt;LocateProtocol (&amp;gEfiHiiStringProtocolGuid, NULL, (VOID **) &amp;HiiString);
+  if (EFI_ERROR (Status)) {
+    return Status;
+  }
+  PrivateData-&gt;HiiString = HiiString;
+
+  //
+  // Locate Formbrowser2 protocol
+  //
+  Status = gBS-&gt;LocateProtocol (&amp;gEfiFormBrowser2ProtocolGuid, NULL, (VOID **) &amp;FormBrowser2);
+  if (EFI_ERROR (Status)) {
+    return Status;
+  }
+  PrivateData-&gt;FormBrowser2 = FormBrowser2;
+
+  //
+  // Locate ConfigRouting protocol
+  //
+  Status = gBS-&gt;LocateProtocol (&amp;gEfiHiiConfigRoutingProtocolGuid, NULL, (VOID **) &amp;HiiConfigRouting);
+  if (EFI_ERROR (Status)) {
+    return Status;
+  }
+  PrivateData-&gt;HiiConfigRouting = HiiConfigRouting;
+
+//End code
+</code></pre><p><img src="../media/image28.png" alt=""><br></p>
+<p>4). Since the Hii Database Protocol was located earlier in the code with the previous code insertion and is no longer necessary,<strong> comment out </strong>the old OpenProtocol code with the &#x201C;<code>//</code>&#x201D; (approx. lines 289-298, as shown below) and<strong> add the comment </strong>&quot;<code>//</code>&quot; Done above <br> 
+Make sure not to comment out the second &#x201C;<code>if (!EFI_ERROR (Status)) {</code>&#x201D;<br></p>
+<p><img src="../media/image29.png" alt=""><br> 
+<strong>Note</strong>:  The earlier <code>LocateProtocol</code> code already found the pointer to the Hii Database protocol and stored it to the local pointer variable <code>HiiDatabase</code>. <br> When we added the driver-consumed protocols, we searched via <code>LocateProtocol</code> for the Hii Database pointer function. Since we did it above we&#x2019;re now commenting out this code.<br></p>
+<p>5). <strong>Comment out</strong> the matching &#x201C;<code>}</code>&#x201D; with &#x201C;<code>//</code>&#x201D; to the if statement (as shown below at approx. line 310): 
+<img src="../media/image30.png" alt=""><br></p>
+<p>6). <strong>Save</strong> MyWizardDriver.c<br></p>
+<p>7). <strong>Open</strong> C:\fw\edk2\MyWizardDriver\HiiConfigAccess.c. <br>  The Driver Wizard only made dummy functions for the extract, route and callback functions. In order to save the Data passed into the forms from the Hii Browser engine, you will need to port these functions to be functional.<br></p>
+<p>8). <strong>Add</strong> the following extern statements for the form GUID and the NVRam variable (as shown below) these are global to the driver module only hence the beginning lower case &#x201C;m&#x201D; is the standard for a global for a module : </p>
+<pre><code>extern EFI_GUID   mMyWizardDriverFormSetGuid;
+extern CHAR16     mIfrVariableName[];
+</code></pre><p><img src="../media/image31.png" alt=""><br></p>
+<p>9). <strong>Locate</strong> <code>MyWizardDriverHiiConfigAccessExtractConfig</code> and <strong>replace</strong> line 108, &#x201C;<code>return EFI_NOT_FOUND</code>&#x201D;, with the following code spread over  <strong>Next</strong> pages: 
+<img src="../media/image32.png" alt=""><br></p>
+<pre><code>//Begin code
+ EFI_STATUS                       Status;
+  UINTN                            BufferSize;
+  MYWIZARDDRIVER_DEV               *PrivateData;
+  EFI_HII_CONFIG_ROUTING_PROTOCOL  *HiiConfigRouting;
+  EFI_STRING                       ConfigRequest;
+  EFI_STRING                       ConfigRequestHdr;
+  UINTN                            Size;
+  BOOLEAN                          AllocatedRequest;
+  if (Progress == NULL || Results == NULL) {
+    return EFI_INVALID_PARAMETER;
+  }
+  //
+  // Initialize the local variables.
+  //
+  ConfigRequestHdr  = NULL;
+  ConfigRequest     = NULL;
+  Size              = 0;
+  *Progress         = Request;
+  AllocatedRequest  = FALSE;
+  PrivateData = MYWIZARDDRIVER_DEV_FROM_THIS (This);
+  HiiConfigRouting = PrivateData-&gt;HiiConfigRouting;
+  //
+  // Get Buffer Storage data from EFI variable.
+  // Try to get the current setting from variable.
+  //
+  BufferSize = sizeof (MYWIZARDDRIVER_CONFIGURATION);
+  Status = gRT-&gt;GetVariable (
+            mIfrVariableName,
+            &amp;mMyWizardDriverFormSetGuid,
+            NULL,
+            &amp;BufferSize,
+            &amp;PrivateData-&gt;Configuration
+            );
+if (EFI_ERROR (Status)) {
+  return EFI_NOT_FOUND;
+}
+  if (Request == NULL) {
+        DEBUG ((DEBUG_INFO, &quot;\n:: Inside of Extract Config and Request == Null &quot;));
+  } else { 
+    ConfigRequest = Request;
+  } 
+    //
+    // Convert buffer data to &lt;ConfigResp&gt; by helper function BlockToConfig()
+    //
+    Status = HiiConfigRouting-&gt;BlockToConfig (
+                                  HiiConfigRouting,
+                                  ConfigRequest,
+                                  (UINT8 *) &amp;PrivateData-&gt;Configuration,
+                                  BufferSize,
+                                  Results,
+                                  Progress
+                                  );
+  //
+  // Free the allocated config request string.
+  //
+  if (AllocatedRequest) {
+    FreePool (ConfigRequest);
+  }
+  //
+  // Set Progress string to the original request string.
+  //
+  if (Request == NULL) {
+    *Progress = NULL;
+  } else if (StrStr (Request, L&quot;OFFSET&quot;) == NULL) {
+    *Progress = Request + StrLen (Request);
+  }
+  return Status;
+// End code
+</code></pre><p>10).  Now <strong>locate</strong> <code>MyWizardDriverHiiConfigAccessRouteConfig</code> and <strong>replace</strong> line at approx. 228, with &#x201C;<code>return EFI_NOT_FOUND</code>&#x201D;, with the following code: 
+<img src="../media/image33.png" alt=""><br></p>
+<pre><code>//Begin code
+EFI_STATUS                       Status;
+  UINTN                            BufferSize;
+  MYWIZARDDRIVER_DEV               *PrivateData;
+  EFI_HII_CONFIG_ROUTING_PROTOCOL  *HiiConfigRouting;
+
+  if (Configuration == NULL || Progress == NULL) {
+    return EFI_INVALID_PARAMETER;
+  }
+
+  PrivateData = MYWIZARDDRIVER_DEV_FROM_THIS (This);
+  HiiConfigRouting = PrivateData-&gt;HiiConfigRouting;
+  *Progress = Configuration;
+
+  //
+  // Get Buffer Storage data from EFI variable
+  //
+  BufferSize = sizeof (MYWIZARDDRIVER_CONFIGURATION);
+  Status = gRT-&gt;GetVariable (
+            mIfrVariableName,
+            &amp;mMyWizardDriverFormSetGuid,
+            NULL,
+            &amp;BufferSize,
+            &amp;PrivateData-&gt;Configuration
+            );
+  if (EFI_ERROR (Status)) {
+    return Status;
+  }
+
+  //
+  // Convert &lt;ConfigResp&gt; to buffer data by helper function ConfigToBlock()
+  //
+  BufferSize = sizeof (MYWIZARDDRIVER_CONFIGURATION);
+  Status = HiiConfigRouting-&gt;ConfigToBlock (
+                               HiiConfigRouting,
+                               Configuration,
+                               (UINT8 *) &amp;PrivateData-&gt;Configuration,
+                               &amp;BufferSize,
+                               Progress
+                               );
+  if (EFI_ERROR (Status)) {
+    return Status;
+  }
+
+  //
+  // Store Buffer Storage back to EFI variable
+  //
+  Status = gRT-&gt;SetVariable(
+                  mIfrVariableName,
+                  &amp;mMyWizardDriverFormSetGuid,
+                  EFI_VARIABLE_NON_VOLATILE | EFI_VARIABLE_BOOTSERVICE_ACCESS,
+                  sizeof (MYWIZARDDRIVER_CONFIGURATION),
+                  &amp;PrivateData-&gt;Configuration
+                  );
+          DEBUG ((DEBUG_INFO, &quot;\n:: ROUTE CONFIG Saving the configuration to NVRAM \n&quot;));
+
+  return Status;
+
+
+  //return EFI_NOT_FOUND;
+//end code
+</code></pre><p>11). Lastly<strong>, locate</strong> MyWizardDriverHiiConfigAccessCallback and <strong>replace </strong>at approx.<strong>** line 326, &#x201C;</strong>return EFI_UNSUPPORTED**;&#x201D;, with the following code: 
+<img src="../media/image34.png" alt=""><br></p>
+<pre><code>//Begin code
+  MYWIZARDDRIVER_DEV      *PrivateData;
+  EFI_STATUS                      Status;
+  EFI_FORM_ID                     FormId;
+
+    DEBUG ((DEBUG_INFO, &quot;\n:: START Call back ,Question ID=0x%08x Type=0x%04x Action=0x%04x&quot;, QuestionId, Type, Action));
+
+
+
+  if (((Value == NULL) &amp;&amp; (Action != EFI_BROWSER_ACTION_FORM_OPEN) &amp;&amp; (Action != EFI_BROWSER_ACTION_FORM_CLOSE))||
+    (ActionRequest == NULL)) {
+    return EFI_INVALID_PARAMETER;
+  }
+
+
+  FormId = 0;
+  Status = EFI_SUCCESS;
+  PrivateData = MYWIZARDDRIVER_DEV_FROM_THIS (This);
+
+  return Status;
+//end code
+</code></pre><p>12). <strong>Save</strong> HiiConfigAccess.c </p>
+<h4 id="build-and-test-mywizarddriver">Build and test MyWizardDriver</h4>
+<ol>
+<li><strong>Open</strong> the Visual Studio Command Prompt </li>
+<li><strong>Type</strong> build </li>
+<li><strong>Type</strong> build run </li>
+<li><strong>At the UEFI Shell prompt,type</strong> fs0: </li>
+<li><strong>Type</strong> Load MyWizardDriver.efi </li>
+<li><strong>Press</strong> &#x201C;Enter&#x201D; 
+<img src="../media/image17.png" alt=""></li>
+<li><strong>Type</strong> exit </li>
+<li>Now at the setup front page menu,<strong> select </strong>&#x201C;Device Manager&#x201D;
+<img src="../media/image18.png" alt=""></li>
+<li><strong>Press</strong> &#x201C;Enter&#x201D;  to enter <strong>&#x201C;Device Manager&#x201D;</strong></li>
+<li><strong>Inside the Device Manager menu</strong> press <strong>the down to &#x201C;My Wizard Driver Sample Formset&#x201D;**</strong> <strong>Press</strong> &quot;Enter&quot;
+<img src="../media/image19.png" alt="">
+<strong>Press</strong> &quot;Enter&quot;
+<img src="../media/image20.png" alt="">
+<strong><em>Note</em></strong>: Once you hit &#x201C;Enter&#x201D;, notice that your form is now displayed with a choice to enable your Device. Also notice the titles and help strings that are in the .UNI file you edited. </li>
+<li>Test by <strong>Press</strong> the space bar to Enable and Disable the &#x201C;Enable My XYZ Device&#x201D; to change its value from<strong>:</strong> <code>[X]</code> to <code>[ ]</code> <br> <strong>Note</strong>: Notice the &#x201C;<code>Configuration changed</code>&#x201D; message at the menu bottom. </li>
+<li><strong>Press</strong> &#x201C;F10&#x201D; </li>
+<li><strong>Press </strong>&#x201C;Escape&#x201D; to exit</li>
+<li><strong>Press </strong>&#x201C;Escape&#x201D; to exit the &#x201C;Device Manager&#x201D; Page</li>
+<li><strong>Press </strong>Up Arrow to &#x201C;Continue&#x201D;
+<img src="../media/image24.png" alt=""></li>
+<li><strong>Press</strong> &#x201C;Enter&#x201D; </li>
+<li>At the Shell Prompt type <strong><code>Shell&gt; dmpstore -all</code></strong> <br> <strong>Notice</strong> that enable is selected and saved in NVRam as the value of 0x00:
+<img src="../media/image36-37.JPG" alt="">
+Because our data structure in<code>MyWizardDriverNVDataStruc.h</code> is stored in NVRAM with the variable name <code>MWD_IfrNVData</code> of type <code>MYWIZARDDRIVER_CONFIGURATION</code>, we can see the changes from our menu accessing through our HII forms.<br> Notice that the enable/disable byte is the last byte in data structure <code>MWD_IfrNVData.MyWizardDriverChooseToEnable</code> where <code>00 == disable</code> and <code>01 == enable</code>.</li>
+<li><strong>Type</strong> Reset to return to the Visual Studio Command Prompt <br></li>
+</ol>
+<p><img src="../media/image97.png" alt=""></p>
+<hr>
+<p>For any build issues copy the solution files from C:\Fw\LabSolutions\LessonE.2</p>
+<p>NOTE: Del Directory C:\fw\edk2\Build\NT32IA32\DEBUG_VS2010x86\IA32\MyWizardDriver before the Build command to build the MyWizardDriver Clean</p>
+<h3 id="end-of-lab-2">End of Lab 2</h3>
+
+                                
+                                </section>
+                            
+                        </div>
+                    </div>
+                    
+                    
+
+<div>
+    <hr>
+    
+      <h2>
+        <div style="position:absolute;text-align:left">UEFI Driver HII Win Lab Guide</div>
+        <div style="position:absolute;width:100%;text-align:center">DRAFT </div>
+        <div style="text-align:right">Revision 01.0</div>
+      </h2>  
+    
+</div>
+
+
+
+                
+            </div>
+
+            
+                
+                <a href="b_edit_driver_for_adding_hii.html" class="navigation navigation-prev " aria-label="Previous page: b. Edit Driver for adding HII  ">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="3_updating_your_driver_to_initialize_data_from_the.html" class="navigation navigation-next " aria-label="Next page: Lab 3. Updating your driver to initialize data from the VFR data to the HII Database">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"Lab 2. Updating HII to Save Data Settings","level":"1.2.4","depth":2,"next":{"title":"Lab 3. Updating your driver to initialize data from the VFR data to the HII Database","level":"1.2.5","depth":2,"path":"uefi_driver_wizard__adding_hii/3_updating_your_driver_to_initialize_data_from_the.md","ref":"uefi_driver_wizard__adding_hii/3_updating_your_driver_to_initialize_data_from_the.md","articles":[]},"previous":{"title":"b. Edit Driver for adding HII  ","level":"1.2.3","depth":2,"path":"uefi_driver_wizard__adding_hii/b_edit_driver_for_adding_hii.md","ref":"uefi_driver_wizard__adding_hii/b_edit_driver_for_adding_hii.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{"draft":"yes","title":"UEFI Driver HII Win Lab Guide","version":"Revision 01.0"},"plugins":["puml-aleung"],"pluginsConfig":{"puml-aleung":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"uefi_driver_wizard__adding_hii/2_updating_hii_to_save_data_settings.md","mtime":"2020-12-01T06:56:49.304Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-12-01T06:57:18.936Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

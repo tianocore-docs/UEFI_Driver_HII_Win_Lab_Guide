@@ -1,0 +1,604 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>Lab 6. Updating the Menu:  Creating a String to Name a Saved Configuration · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+        <link rel="stylesheet" href="../styles/website.css">
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="7_updating_the_menu_numeric_entry.html" />
+    
+    
+    <link rel="prev" href="5_updating_the_menu_pop_-up_box.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    UEFI_Driver_HII_Win_Lab_Guide
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    UEFI Driver Wizard – Adding HII Labs
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" data-path="1_adding_strings_and_forms_to_setup_hii_for_user_c.html">
+            
+                <a href="1_adding_strings_and_forms_to_setup_hii_for_user_c.html">
+            
+                    
+                    Lab 1. Adding Strings and Forms to Setup HII for User Configuration
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2" data-path="a_setup_for_lab_adding_hii.html">
+            
+                <a href="a_setup_for_lab_adding_hii.html">
+            
+                    
+                    a. Setup for Lab adding HII 
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3" data-path="b_edit_driver_for_adding_hii.html">
+            
+                <a href="b_edit_driver_for_adding_hii.html">
+            
+                    
+                    b. Edit Driver for adding HII  
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4" data-path="2_updating_hii_to_save_data_settings.html">
+            
+                <a href="2_updating_hii_to_save_data_settings.html">
+            
+                    
+                    Lab 2. Updating HII to Save Data Settings
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.5" data-path="3_updating_your_driver_to_initialize_data_from_the.html">
+            
+                <a href="3_updating_your_driver_to_initialize_data_from_the.html">
+            
+                    
+                    Lab 3. Updating your driver to initialize data from the VFR data to the HII Database
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.6" data-path="4_updating_the_menu_reset_button.html">
+            
+                <a href="4_updating_the_menu_reset_button.html">
+            
+                    
+                    Lab 4. Updating the Menu:  Reset Button
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.7" data-path="5_updating_the_menu_pop_-up_box.html">
+            
+                <a href="5_updating_the_menu_pop_-up_box.html">
+            
+                    
+                    Lab 5. Updating the Menu:  Pop-up Box
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.2.8" data-path="6_updating_the_menu_creating_a_string_to_name_a_sa.html">
+            
+                <a href="6_updating_the_menu_creating_a_string_to_name_a_sa.html">
+            
+                    
+                    Lab 6. Updating the Menu:  Creating a String to Name a Saved Configuration
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.9" data-path="7_updating_the_menu_numeric_entry.html">
+            
+                <a href="7_updating_the_menu_numeric_entry.html">
+            
+                    
+                    Lab 7. Updating the Menu:  Numeric Entry
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.10" data-path="8_updating_your_driver_for_interactive_call_backs.html">
+            
+                <a href="8_updating_your_driver_for_interactive_call_backs.html">
+            
+                    
+                    Lab 8. Updating your Driver for Interactive Call Backs
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.11" data-path="9_add_code_to_your_driver_when_call_back_events_oc.html">
+            
+                <a href="9_add_code_to_your_driver_when_call_back_events_oc.html">
+            
+                    
+                    Lab 9. Add code to your driver when Call Back events occur for Interactive Items
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.12" data-path="10_adding_an_additional_form_page.html">
+            
+                <a href="10_adding_an_additional_form_page.html">
+            
+                    
+                    Lab 10. Adding an Additional Form Page
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.13" data-path="11_adding_communication_from_driver_to_console_thr.html">
+            
+                <a href="11_adding_communication_from_driver_to_console_thr.html">
+            
+                    
+                    Lab 11. Adding Communication from Driver to Console through HII
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="../lab_setup/">
+            
+                <a href="../lab_setup/">
+            
+                    
+                    Lab Setup
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="../microsoft_windows_10__visual_studio_command_prompt.html">
+            
+                <a href="../microsoft_windows_10__visual_studio_command_prompt.html">
+            
+                    
+                    Microsoft Windows 10 – Visual Studio command prompt
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="../reference.html">
+            
+                <a href="../reference.html">
+            
+                    
+                    Reference
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="../microsoft_windows_and_visual_studio_matrix/">
+            
+                <a href="../microsoft_windows_and_visual_studio_matrix/">
+            
+                    
+                    Microsoft Windows and Visual Studio Matrix 
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" data-path="../microsoft_windows_and_visual_studio_matrix/glossary_of_uefi_terms_and_acronyms.html">
+            
+                <a href="../microsoft_windows_and_visual_studio_matrix/glossary_of_uefi_terms_and_acronyms.html">
+            
+                    
+                    Glossary of UEFI Terms and Acronyms
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" data-path="../microsoft_windows_and_visual_studio_matrix/helpful_links.html">
+            
+                <a href="../microsoft_windows_and_visual_studio_matrix/helpful_links.html">
+            
+                    
+                    Helpful Links
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+	
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >Lab 6. Updating the Menu:  Creating a String to Name a Saved Configuration</a>
+    </h1>
+</div>
+<div>
+    <!-- 
+    <img style="float:left; align:middle; height:2em" src="media/TianocoreTitlePageLogo.jpg"/>
+     -->
+    
+      <h2>
+        <div style="position:absolute;text-align:left">UEFI Driver HII Win Lab Guide</div>
+        <div style="position:absolute;width:100%;text-align:center">DRAFT </div>
+        <div style="text-align:right">Revision 01.0</div>
+      </h2>  
+    
+    <hr>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+                                <section class="normal markdown-section">
+                                
+                                <!--- @file
+ file
+
+Copyright (c) 2018, Intel Corporation. All rights reserved.<BR>
+
+Redistribution and use in source (original document form) and 'compiled'
+forms (converted to PDF, epub, HTML and other formats) with or without
+modification, are permitted provided that the following conditions are met:
+
+1) Redistributions of source code (original document form) must retain the
+above copyright notice, this list of conditions and the following
+disclaimer as the first lines of this file unmodified.
+
+2) Redistributions in compiled form (transformed to other DTDs, converted to
+PDF, epub, HTML and other formats) must reproduce the above copyright
+notice, this list of conditions and the following disclaimer in the
+documentation and/or other materials provided with the distribution.
+
+THIS DOCUMENTATION IS PROVIDED BY TIANOCORE PROJECT "AS IS" AND ANY EXPRESS OR
+IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF
+MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO
+EVENT SHALL TIANOCORE PROJECT BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL,
+SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO,
+PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS;
+OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY,
+WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR
+OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS DOCUMENTATION, EVEN IF
+ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+
+-->
+<h2 id="6-updating-the-menu-creating-a-string-to-name-a-saved-configuration">Lab 6. Updating the Menu: Creating a String to Name a Saved Configuration </h2>
+<p>In this lab, you&#x2019;ll create a string to name a saved configuration that will be stored into the NVRAM variable space. This lab uses the VFR term &#x201C;string&#x201D; to prompt the user to enter a string value. The VFR can determine the minimum and maximum number of characters of the string length with the terms &#x201C;<code>minsize</code>&#x201D; and &#x201C;<code>maxsize</code>&#x201D;. Since there is also an enable/disable switch, the VFR can use the &#x201C;<code>grayoutif</code>&#x201D; term again to allow or disallow changes to this field.
+<img src="../media/image59.png" alt=""></p>
+<h6 id="figure-6--menu-with-a-string-item">Figure 6 : Menu with a string item</h6>
+<ol>
+<li><strong>Update</strong> the MyWizardDriver.vfr file </li>
+<li><strong>Add</strong> the following code to the location at approx. line 77 and before the &#x201C;<code>resetbutton</code>&#x201D; item (as shown below): <pre><code>//
+// Define a string (EFI_IFR_STRING) to name the configuration in the 
+// NVRAM variable
+//
+grayoutif  ideqval MWD_IfrNVData.MyWizardDriverChooseToEnable == 0x0;
+string    varid    = MWD_IfrNVData.MyWizardDriverStringData,
+          prompt   = STRING_TOKEN(STR_MY_STRING_PROMPT),
+          help     = STRING_TOKEN(STR_MY_STRING_HELP),
+          minsize  = 3,
+          maxsize  = 20,
+endstring;
+endif;
+</code></pre><img src="../media/image60.png" alt=""></li>
+<li><strong>Save</strong> MyWizardDriver.vfr </li>
+<li><strong>Update</strong> MyWizardDriver.uni </li>
+<li><strong>Add</strong> the following code to the bottom of the file: <br></li>
+</ol>
+<pre><code>
+#string STR_MY_STRING_PROMPT           #language en &quot;Name of Configuration&quot;
+#string STR_MY_STRING_HELP             #language en &quot;Enter a name for this configuration. This string can is 3 to 20 characters&quot;
+</code></pre><p><img src="../media/image61.png" alt=""><br>
+6). <strong>Save</strong> MyWizardDriver.uni </p>
+<h4 id="build-and-test-mywizarddriver">Build and test MyWizardDriver</h4>
+<ol>
+<li><strong>Open</strong> the Visual Studio Command Prompt</li>
+<li><strong>Type</strong> build</li>
+<li><strong>Type</strong> build run</li>
+<li>At the UEFI Shell prompt,type <strong>exit</strong><br>
+<img src="../media/image46.png" alt=""></li>
+<li>Now at the setup front page menu,<strong> select</strong> &#x201C;Device Manager&#x201D;</li>
+<li>Inside the Device Manager menu<strong> press </strong>the down arrow to &#x201C;My Wizard Driver Sample Formset&#x201D; <strong>Press</strong> &quot;Enter&quot;</li>
+<li><strong>Select </strong>&#x201C;Name of Configuration&#x201D; then <strong>Press</strong> &#x201C;Enter&#x201D; <br>
+<strong>Notice </strong>the string text pop up menu gets displayed.
+<img src="../media/image62.png" alt=""></li>
+<li><strong>Test</strong> the &#x201C;<code>minsize</code>&#x201D; by only <strong>typing</strong> your choice of a two character string. Then <strong>Press</strong> &#x201C;Enter&#x201D; <br>
+<strong>Notice</strong> the an error message validating that you need to enter at least three or more characters. 
+<img src="../media/image63.png" alt=""></li>
+<li><strong>Press</strong> &#x201C;Enter&#x201D; to clear the message </li>
+<li><strong>Press</strong> &#x201C;Enter&#x201D; again to re-enter pop up menu </li>
+<li><strong>Test </strong>by<strong> typing </strong>more than &#x201C;<code>maxsize</code>&#x201D; of 20 characters<strong>** Then  </strong>Press<strong> &#x201C;Enter&#x201D; . <br>
+</strong>Notice** that the Browser only allows the maximum number of 20 characters to be entered with a forced stop. There is no error message but no more characters are allowed to be typed into the pop up menu.
+<img src="../media/image64.png" alt=""></li>
+<li><strong>Press</strong> &#x201C;Enter&#x201D; <br>
+<strong>Notice</strong> that the &#x201C;<strong>Configuration changed</strong>&#x201D; message is displayed
+<img src="../media/image65.png" alt=""> </li>
+<li><strong>Test</strong> the <code>grayoutif</code> by selecting <strong>&#x201C;Enable My XYZ Device&#x201D;</strong> </li>
+<li><strong>Press</strong> the &#x201C;Spacebar&#x201D; to toggle off/disable.  Then <strong>Press</strong> the &#x201C;Spacebar&#x201D; again to Enable. <br>
+<strong>Notice</strong> that the &#x201C;Select Base Address&#x201D;  and &#x201C;Name of Configruation&#x201D; fields are  now grayed out and not selectable 
+<img src="../media/image66.png" alt=""></li>
+<li><strong>Press </strong>&#x201C;F10&#x201D; to save.</li>
+<li><strong>Press </strong> &#x201C;Escape&#x201D; to exit</li>
+<li><strong>Press </strong> &#x201C;Escape&#x201D; to exit the &#x201C;Device Manager&#x201D;</li>
+<li><strong>Select</strong> &#x201C;Continue&#x201D;  and then <strong>Press </strong> &#x201C;Enter&#x201D;</li>
+<li>At the Shell Prompt, <strong>type</strong> <code>dmpstore -all</code> <br>
+<strong>Notice</strong> the unicode string &#x201C;<code>12345678901234567890</code>&#x201D; (or the 20 character value you typed) is now stored 
+because you entered those characters in the HII form menu.  This is because the file <code>WizardDriverNVDataStruc.h</code> has the data structure stored in NVRAM with the GUID define name <code>MWD_IfrNVData</code>of type <code>MYWIZARDDRIVER_CONFIGURATION</code>.  Notice that string data is the first 20 bytes in the data structure <code>MWD_IfrNVData.MyWizardDriverStringData</code>.
+<img src="../assets/image65_66.JPG" alt=""></li>
+<li><strong>Type</strong> &#x201C;reset&#x201D; and then &#x201C;Enter&quot; at the Shell prompt to return to the Visual Studio Command Prompt<br>
+<img src="../media/image97.png" alt=""></li>
+</ol>
+<hr>
+<p>For any build issues copy the solution files from C:\Fw\LabSolutions\LessonE.6</p>
+<p>NOTE: Del Directory C:\fw\edk2\Build\NT32IA32\DEBUG_VS2010x86\IA32\MyWizardDriver before the Build command to build the MyWizardDriver Clean.</p>
+<h3 id="end-of-lab-6">End of Lab 6</h3>
+
+                                
+                                </section>
+                            
+                        </div>
+                    </div>
+                    
+                    
+
+<div>
+    <hr>
+    
+      <h2>
+        <div style="position:absolute;text-align:left">UEFI Driver HII Win Lab Guide</div>
+        <div style="position:absolute;width:100%;text-align:center">DRAFT </div>
+        <div style="text-align:right">Revision 01.0</div>
+      </h2>  
+    
+</div>
+
+
+
+                
+            </div>
+
+            
+                
+                <a href="5_updating_the_menu_pop_-up_box.html" class="navigation navigation-prev " aria-label="Previous page: Lab 5. Updating the Menu:  Pop-up Box">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="7_updating_the_menu_numeric_entry.html" class="navigation navigation-next " aria-label="Next page: Lab 7. Updating the Menu:  Numeric Entry">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"Lab 6. Updating the Menu:  Creating a String to Name a Saved Configuration","level":"1.2.8","depth":2,"next":{"title":"Lab 7. Updating the Menu:  Numeric Entry","level":"1.2.9","depth":2,"path":"uefi_driver_wizard__adding_hii/7_updating_the_menu_numeric_entry.md","ref":"uefi_driver_wizard__adding_hii/7_updating_the_menu_numeric_entry.md","articles":[]},"previous":{"title":"Lab 5. Updating the Menu:  Pop-up Box","level":"1.2.7","depth":2,"path":"uefi_driver_wizard__adding_hii/5_updating_the_menu_pop_-up_box.md","ref":"uefi_driver_wizard__adding_hii/5_updating_the_menu_pop_-up_box.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{"draft":"yes","title":"UEFI Driver HII Win Lab Guide","version":"Revision 01.0"},"plugins":["puml-aleung"],"pluginsConfig":{"puml-aleung":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"uefi_driver_wizard__adding_hii/6_updating_the_menu_creating_a_string_to_name_a_sa.md","mtime":"2020-12-01T06:56:49.304Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-12-01T06:57:18.936Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+
